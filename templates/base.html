@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estufa.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+<div class="div_menu">
+    <div class="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+        <a href="/"><button class="dropbtn">Inicio</button></a>
+        <div id="myDropdown" class="dropdown-content">
+            
+            <div class="dropdown-submenu">
+                <a href="/estufas/"><button onclick="showEstufasSubMenu()" class="dropbtn">Estufas</button></a>
+                <div id="estufasSubmenu" class="menu_estufa">
+                    {% for estufa in estufas %}
+                    <ul>
+                        <li><a href="/estufas/{{estufa.id}}">{{estufa.titulo}}</a></li>
+                    </ul>
+                    {% endfor %}
+                </div>
+            </div>
+            <a href="/contacto/"><button onclick="showEstufasSubMenu()" class="dropbtn">Contacto</button></a>
+        </div>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</div>
+</body>
+<body>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2023 Mi Sitio. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Aquí puedes incluir enlaces a tus archivos JavaScript si los necesitas -->
+
+</body>
+</html>

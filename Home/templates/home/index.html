@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+<section>
+    <h2 class="presentation-heading">Presentación</h2>
+    <p class="presentation-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellat minima earum voluptatibus nihil nulla, esse ea repudiandae amet eos, voluptas natus vero quasi rem dolores sunt sit assumenda aliquid..</p>
+</section>
+
+<section>
+    <h2 class="features-heading">Características principales</h2>
+    <ul class="features-list">
+        <li>Característica 1</li>
+        <li>Característica 2</li>
+        <li>Característica 3</li>
+    </ul>
+</section>
+{% endblock %}

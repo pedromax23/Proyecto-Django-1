@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %} Estufas {% endblock %}
+{% block content %}
+
+{% load static %}
+<div class="estufas-container">
+  {% for estufa in estufas %}
+  <div class="estufa-card">
+      <img src="{{ estufa.imagen.url }}" alt="" class="estufa-image">
+      <div class="estufa-details">
+          <h2 class="estufa-title">{{ estufa.titulo }}</h2>
+          <a href="/estufas/{{ estufa.id }}" class="ver-mas-link">Ver más</a>
+      </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

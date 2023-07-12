@@ -1,0 +1,48 @@
+.estufas-container {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.estufa-card {
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.estufa-image {
+  width: 300px; /* Establece el ancho deseado para las imágenes */
+  height: 200px; /* Establece la altura deseada para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor manteniendo la relación de aspecto */
+}
+
+
+.estufa-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.estufa-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.ver-mas-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.ver-mas-link:hover {
+  background-color: #45a049;
+}

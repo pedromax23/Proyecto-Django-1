@@ -1,0 +1,90 @@
+.div_menu {
+  margin-left: 100px;
+}
+
+
+
+.menu_estufa {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+}
+
+.dropdown-content ul {
+  list-style: none; /* Quita los estilos de lista predeterminados */
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-content ul li {
+  margin-bottom: 5px; /* Espaciado entre elementos de la lista */
+}
+
+.dropdown-submenu:hover .menu_estufa {
+  display: block; /* Muestra el menú de estufas al pasar el mouse por encima del botón */
+}
+
+.dropdown {
+  width: 10%;
+  position: relative;
+  display: inline-block;
+}
+
+.color_letras {
+  color: white;
+  text-decoration: none;
+}
+
+.dropbtn {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  width: 150%;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar {
+  margin-top: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+
+  /* Estilos para el pie de página */
+  footer {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
