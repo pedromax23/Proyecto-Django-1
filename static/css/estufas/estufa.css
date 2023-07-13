@@ -1,0 +1,42 @@
+.estufas-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .estufa-item {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .estufa-imagen {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .estufa-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .estufa-enlace {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .estufa-enlace:hover {
+    color: #555;
+  }
+  

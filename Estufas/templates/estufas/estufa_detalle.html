@@ -1,18 +1,19 @@
 {% extends 'base.html' %}
-{% block title %} {{ estufa.titulo }} {% endblock %}
-{% block content %}
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/detalle_estufa.css' %}">
+{% block title %}{{ estufa.titulo }}{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/estufas/detalle.css' %}">
 
 <section class="estufa-section">
-  <div class="estufa-content">
+  <div>
     <img src="{{ estufa.imagen.url }}" alt="{{ estufa.titulo }}" class="estufa-image">
-    <div class="estufa-details">
+    <div>
       <h2 class="estufa-title">{{ estufa.titulo }}</h2>
       <p class="estufa-description">{{ estufa.descripcion }}</p>
     </div>
   </div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam perspiciatis fuga error officiis dolores aperiam ipsam commodi minus fugiat unde reiciendis similique atque eum totam quo dolorum sequi, consectetur odio.</p>
+  <div class="estufa-text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam perspiciatis fuga error officiis dolores aperiam ipsam commodi minus fugiat unde reiciendis similique atque eum totam quo dolorum sequi, consectetur odio.</p>
+  </div>
 </section>
-
 {% endblock %}
